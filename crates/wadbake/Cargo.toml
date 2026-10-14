@@ -1,0 +1,7 @@
+[package]
+name = "wadbake"
+version = "0.1.0"
+edition = "2021"
+description = "Converts a DOOM IWAD into one-cell-per-scalar lumps for the Whitespace build"
+
+[dependencies]

@@ -1,0 +1,9 @@
+[package]
+name = "runtime"
+version = "0.1.0"
+edition = "2021"
+description = "libc, W_* and I_* platform layer for compiled DOOM, written with the wsdoom DSL"
+
+[dependencies]
+wsdoom = { path = "../.." }
+wadbake = { path = "../wadbake" }

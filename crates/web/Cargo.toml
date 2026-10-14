@@ -1,0 +1,28 @@
+[package]
+name = "doom-web"
+version = "0.1.0"
+edition = "2021"
+description = "Plays doom.ws in a web page: the wsdoom Whitespace VM compiled to WebAssembly"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wsdoom = { path = "../.." }
+# must match the wasm-bindgen CLI that generates pkg/
+wasm-bindgen = "=0.2.129"
+wasm-bindgen-futures = "0.4.79"
+js-sys = "0.3.106"
+web-sys = { version = "0.3.106", features = [
+    "CanvasRenderingContext2d",
+    "Document",
+    "Element",
+    "Event",
+    "EventTarget",
+    "HtmlCanvasElement",
+    "ImageData",
+    "KeyboardEvent",
+    "Performance",
+    "Response",
+    "Window",
+] }

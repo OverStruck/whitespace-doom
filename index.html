@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOOM in Whitespace</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; color: #b0b0b0; font: 14px monospace; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  /* 320x200 shown at 4:3, as on DOOM's monitors */
+  canvas { width: min(100vw, 133.33vh); aspect-ratio: 4 / 3; image-rendering: pixelated; }
+  #status { position: absolute; }
+</style>
+</head>
+<body>
+<canvas id="screen" width="320" height="200"></canvas>
+<p id="status">Loading DOOM…</p>
+<script type="module">import init from "./pkg/doom_web.js"; init();</script>
+</body>
+</html>

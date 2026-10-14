@@ -1,0 +1,13 @@
+[package]
+name = "doomgen"
+version = "0.1.0"
+edition = "2021"
+description = "Builds doom.ws from the original DOOM source, the runtime crates and the shareware WAD"
+
+[dependencies]
+wsdoom = { path = "../.." }
+ccfront = { path = "../ccfront" }
+ccback = { path = "../ccback" }
+wadbake = { path = "../wadbake" }
+runtime = { path = "../runtime" }
+platform = { path = "../platform" }

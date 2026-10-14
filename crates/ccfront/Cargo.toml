@@ -1,0 +1,8 @@
+[package]
+name = "ccfront"
+version = "0.1.0"
+edition = "2021"
+description = "C89 preprocessor, lexer and parser producing wsdoom::cc::ast"
+
+[dependencies]
+wsdoom = { path = "../.." }

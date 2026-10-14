@@ -1,0 +1,9 @@
+[package]
+name = "platform"
+version = "0.1.0"
+edition = "2021"
+description = "I_* platform layer (terminal video, keyboard, clock, net/sound stubs) for compiled DOOM"
+
+[dependencies]
+wsdoom = { path = "../.." }
+wadbake = { path = "../wadbake" }

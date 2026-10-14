@@ -1,0 +1,11 @@
+[package]
+name = "ccback"
+version = "0.1.0"
+edition = "2021"
+description = "Type checking, code generation and linking from wsdoom::cc::ast to Whitespace"
+
+[dependencies]
+wsdoom = { path = "../.." }
+
+[dev-dependencies]
+ccfront = { path = "../ccfront" }
